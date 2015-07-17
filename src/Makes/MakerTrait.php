@@ -45,11 +45,7 @@ trait MakerTrait {
      */
     protected function getPath($file_name, $path='controller'){
         if($path == "controller"){
-<<<<<<< HEAD
             return './app/Http/Controllers/' . $file_name . '.php';
-=======
-            return './app/Http/Controllers/Admin/' . $file_name . '.php';
->>>>>>> e711e638462f1655f0a4db823c422493bde702a9
 
         } elseif($path == "model"){
             return './app/'.$file_name.'.php';
@@ -58,7 +54,6 @@ trait MakerTrait {
             return './database/seeds/'.$file_name.'.php';
 
         } elseif($path == "view-index"){
-<<<<<<< HEAD
             return './resources/views/'.$file_name.'/index.blade.php';
 
         } elseif($path == "view-edit"){
@@ -69,18 +64,6 @@ trait MakerTrait {
 
         } elseif($path == "view-create"){
             return './resources/views/'.$file_name.'/create.blade.php';
-=======
-            return './resources/views/admin/'.$file_name.'/index.blade.php';
-
-        } elseif($path == "view-edit"){
-            return './resources/views/admin/'.$file_name.'/edit.blade.php';
-
-        } elseif($path == "view-show"){
-            return './resources/views/admin/'.$file_name.'/show.blade.php';
-
-        } elseif($path == "view-create"){
-            return './resources/views/admin/'.$file_name.'/create.blade.php';
->>>>>>> e711e638462f1655f0a4db823c422493bde702a9
 
         }
     }

@@ -3,18 +3,14 @@
 
 Hi, this is a scaffold generator for Laravel 5.
 
-
+Frok from laraviet/l5scaffold
 
 ## Usage
 
 ### Step 1: Install Through Composer
 
 ```
-<<<<<<< HEAD
-composer require 'mfigge/l5scaffold' --dev
-=======
-composer require 'laraviet/l5scaffold' --dev
->>>>>>> e711e638462f1655f0a4db823c422493bde702a9
+composer require 'eggmcmuffin/l5scaffold' --dev
 ```
 
 ### Step 2: Add the Service Provider
@@ -22,11 +18,7 @@ composer require 'laraviet/l5scaffold' --dev
 Open `config/app.php` and, to your **providers** array at the bottom, add:
 
 ```
-<<<<<<< HEAD
-"Mfigge\L5scaffold\GeneratorsServiceProvider"
-=======
-"Laraviet\L5scaffold\GeneratorsServiceProvider"
->>>>>>> e711e638462f1655f0a4db823c422493bde702a9
+"Eggmcmuffin\L5scaffold\GeneratorsServiceProvider"
 ```
 
 ### Step 3: Run Artisan!

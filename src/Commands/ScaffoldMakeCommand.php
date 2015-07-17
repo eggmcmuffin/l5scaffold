@@ -7,10 +7,6 @@ use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Composer;
 use Laraviet\L5scaffold\Makes\MakeController;
-<<<<<<< HEAD
-=======
-use Laraviet\L5scaffold\Makes\MakeLayout;
->>>>>>> e711e638462f1655f0a4db823c422493bde702a9
 use Laraviet\L5scaffold\Makes\MakeMigration;
 use Laraviet\L5scaffold\Makes\MakeModel;
 use Laraviet\L5scaffold\Makes\MakerTrait;
@@ -99,10 +95,6 @@ class ScaffoldMakeCommand extends Command
         $this->makeSeed();
         $this->makeModel();
         $this->makeController();
-<<<<<<< HEAD
-=======
-        $this->makeViewLayout();
->>>>>>> e711e638462f1655f0a4db823c422493bde702a9
         $this->makeViews();
 
 
@@ -192,11 +184,7 @@ class ScaffoldMakeCommand extends Command
         $this->info('Dump-autoload...');
         $this->composer->dumpAutoloads();
 
-<<<<<<< HEAD
         $this->info('Route::resource("'.$this->getObjName("names").'","'.$this->getObjName("Name").'Controller"); // Add this line in routes.php');
-=======
-        $this->info('Route::resource("'.$this->getObjName("names").'","Admin\\'.$this->getObjName("Name").'Controller"); // Add this line in routes.php');
->>>>>>> e711e638462f1655f0a4db823c422493bde702a9
 
     }
 
